@@ -1,0 +1,21 @@
+function XO(str) {
+    var words= str.toLowerCase()
+    var countO= 0
+    var countX= 0
+    
+    for(var i=0; i<str.length; i++){
+          if(words[i]=== "o"){
+              countO++
+          }
+          if(words[i]=== "x"){
+              countX++
+          }
+    }
+    
+    if (countO===countX){
+        return true
+    }
+    else{
+      return false
+    }
+}
